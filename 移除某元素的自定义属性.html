@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				border: 4px solid lightblue;
+			}
+			.cls{
+				width: 200px;
+				height: 200px;
+				background-color: lightcyan;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn" value="移除自定义属性" />
+		<div id="dv" score="109" class="cls"></div>
+		<script src="common.js"></script>
+		<script>
+			my$("btn").onclick=function(){
+				my$("dv").removeAttribute("score");
+				my$("dv").removeAttribute("class");
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="显示" /><br />
+		<input type="text" name="name1" value="你好" /><br />
+		<input type="text" name="name2" value="你好" /><br />
+		<input type="text" name="name3" value="你好" /><br />
+		<input type="text" name="name1" value="你好" /><br />
+		<input type="text" name="name2" value="你好" /><br />
+		<input type="text" name="name3" value="你好" /><br />
+		<script src="common.js"></script>
+		<script>
+			//点击按钮，改变所有Name属性值为name1的文本框
+			my$("btn").onclick=function(){
+				//通过name属性值获取元素
+				var inputs=document.getElementsByName("name1");
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].value="一禅小和尚";
+				}
+			};
+		</script>
+	</body>
+</html>

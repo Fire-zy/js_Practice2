@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			ul{
+				cursor: pointer;
+				list-style-type: none;;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li score="10">海绵宝宝</li>
+			<li score="20">派大星</li>
+			<li score="30">章鱼哥</li>
+			<li score="40">蟹老板</li>
+			<li score="50">珍珍</li>
+		</ul>
+		<script src="common.js"></script>
+		<script>
+			//获取所有的li标签
+			var list=document.getElementsByTagName("li");
+			for(var i=0;i<list.length;i++){
+				list[i].onclick=function(){
+					alert(this.getAttribute("score"));
+				};
+			}
+		</script>
+	</body>	
+</html>

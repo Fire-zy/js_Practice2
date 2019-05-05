@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;;
+				padding: 0;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: lightblue;
+				border: 4px solid lightblue;
+				float: left;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	<script src="common.js"></script>
+	<script>
+		var divObjs=document.getElementsByTagName("div");
+		for(var i=0;i<divObjs.length;i++){
+			//为每个鼠标进入添加事件
+			divObjs[i].onmouseover=function(){
+				this.style.border="4px solid pink";
+			};
+			//为每个鼠标离开添加事件
+			divObjs[i].onmouseout=function(){
+				this.style.border="";
+			};
+		}
+	</script>
+	</body>
+</html>

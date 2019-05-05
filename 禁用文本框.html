@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="禁用文本框" />
+		<input type="text" value="文本框" id="txt" />
+		<script>
+			//先根据id获取按钮，为按钮注册点击世家，添加事件处理函数
+			document.getElementById("btn").onclick=function(){
+				document.getElementById("txt").disabled=true;
+			};
+		</script>
+	</body>
+</html>

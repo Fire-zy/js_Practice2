@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="隔行变色" />
+		<ul id="listing">
+			<li>蟹老板</li>
+			<li>海绵宝宝</li>
+			<li>派大星</li>
+			<li>章鱼哥</li>
+			<li>水母</li>
+		</ul>
+		<script src="common.js"></script>
+		<script>
+			my$("btn").onclick=function(){
+				var list=my$("listing").getElementsByTagName("li");
+				//遍历伪数组
+				for(var i=0;i<list.length;i++){
+//					if(i%2==0){
+//						list[i].style.backgroundColor="lightblue";
+//					}else{
+//						list[i].style.backgroundColor="lightcyan";
+//					}
+					list[i].style.backgroundColor=i%2==0?"lightblue":"lightcyan";
+				}
+			};
+		</script>
+	</body>
+</html>
